@@ -33,6 +33,6 @@ app.get('/',(req, res) =>{
     res.send("App API REST William villeda")
 })
 
-app.listen(process.env.PORT || 8985,() => {
+app.listen(8985 || process.env.PORT ,() => {
     console.log("API REST is running !!!!!")
 })
