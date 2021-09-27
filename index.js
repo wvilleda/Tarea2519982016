@@ -34,6 +34,6 @@ app.get('/',(req, res) =>{
     res.send("Hola Mundo")
 })
 
-app.listen(8985,() => {
-    console.log("API REST is running 8985 !!!!!")
+app.listen(process.env.PORT || 8985,() => {
+    console.log("API REST is running !!!!!")
 })
