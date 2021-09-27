@@ -1,8 +1,6 @@
 var mongoose = require('mongoose');
-//var dev_db_url="mongodb://localhost:27017/db_users";
 
 var dev_db_url = "mongodb+srv://william:root@cluster0.nvdtj.mongodb.net/williamVDB?retryWrites=true&w=majority";
-//var dev_db_url = "mongodb+srv://wlazo:admin@cluster0.chrby.mongodb.net/WilliamLDB?retryWrites=true&w=majority";
 
 var mongoDB = process.env.MONGODB_URI || dev_db_url;
 
@@ -13,7 +11,6 @@ var db = mongoose.connection;
 db.on('error',console.error.bind(console,'MongoDB conecction error :'));
 
 var Producto = require('./producto');
-
 
 //////////////////// CRUD OPERATIONS ///////////////////////
 

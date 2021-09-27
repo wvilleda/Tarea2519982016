@@ -29,9 +29,8 @@ app.delete('/producto/delete',(req,res) => {
 })
 
 
-
 app.get('/',(req, res) =>{
-    res.send("Hola Mundo")
+    res.send("App API REST William")
 })
 
 app.listen(process.env.PORT || 8985,() => {
